@@ -23,8 +23,9 @@ type ProjectProps = (typeof projectsData)[number];
 function Project({ title, description, tags, imageUrl }: ProjectProps) {
   return (
     <section
-      className="bg-slate-100 max-w-[42rem] border 
-    border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] mb-3 sm:mb-8 last:mb-0"
+      className="group bg-slate-100 max-w-[42rem] border 
+    border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] mb-3 sm:mb-8 last:mb-0
+    hover:bg-slate-200 transition cursor-pointer"
     >
       <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex-col h-full">
         <h3 className="text-2xl font-semibold">{title}</h3>
@@ -45,7 +46,8 @@ function Project({ title, description, tags, imageUrl }: ProjectProps) {
         src={imageUrl}
         alt="Project"
         quality={95}
-        className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl"
+        className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+        group-hover:-translate-x-3 group-hover:-translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.04] transition"
       />
     </section>
   );
