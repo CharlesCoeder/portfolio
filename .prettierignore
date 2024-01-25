@@ -2,6 +2,8 @@ README.md
 
 package-lock.json
 
+tsconfig.json
+
 # dependencies
 /node_modules
 /.pnp
