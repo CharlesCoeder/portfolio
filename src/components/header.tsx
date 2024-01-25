@@ -38,14 +38,22 @@ export default function Header() {
                 href={link.hash}
                 className={clsx(
                   "flex w-full items-center justify-center px-3 py-3 hover:text-slate-950 transition",
-                  { "text-slate-950": activeSection === link.name },
+                  { "text-slate-950": activeSection === link.name }
                 )}
                 onClick={() => setActiveSection(link.name)}
               >
                 {link.name}
 
                 {link.name === activeSection && (
-                  <span className="bg-slate-100 rounded-full mt-1 mb-1 absolute inset-0 -z-10"></span>
+                  <motion.span
+                    layoutId="activeSection"
+                    transition={{
+                      type: "spring",
+                      stiffness: 380,
+                      damping: 30,
+                    }}
+                    className="bg-slate-100 rounded-full mt-1 mb-1 absolute inset-0 -z-10"
+                  ></motion.span>
                 )}
               </Link>
             </motion.li>
