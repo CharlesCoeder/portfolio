@@ -59,3 +59,25 @@ export const projectsData = [
     imageUrl: subsageImg,
   },
 ] as const;
+
+export const skillsData = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "Python",
+  "Java",
+  "React",
+  "Next.js",
+  "Node.js",
+  "Git",
+  "Tailwind",
+  "MongoDB",
+  "Supabase",
+  "React Native",
+  "WatermelonDB",
+  "AWS API Gateway/Lambda",
+  "PostgreSQL",
+  "Pandas",
+  "Linux",
+] as const;
