@@ -58,7 +58,7 @@ export default function Contact() {
           cols={30}
           rows={10}
           required
-          maxLength={500}
+          maxLength={5000}
           placeholder="Your message"
         ></textarea>
         <button
