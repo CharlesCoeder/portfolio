@@ -6,6 +6,8 @@ import { LuGraduationCap } from "react-icons/lu";
 import { FaUsers } from "react-icons/fa";
 import { FaLanguage } from "react-icons/fa6";
 import { FaUserTie } from "react-icons/fa";
+import { TiWeatherCloudy } from "react-icons/ti";
+import { FaPeopleGroup } from "react-icons/fa6";
 import React from "react";
 
 export const links = [
@@ -114,6 +116,14 @@ export const experiencesData = [
     date: "August 2023 - Present",
   },
   {
+    title: "Community Development Assistant",
+    location: "New York Institute of Technology",
+    description:
+      "Cultivated a strong community by orchestrating events and initiatives that enhance community engagement and foster a collaborative spirit.",
+    icon: React.createElement(FaPeopleGroup),
+    date: "August 2023 - Present",
+  },
+  {
     title: "Project: SonaSense",
     location: "sona-sense.vercel.app",
     description:
@@ -135,6 +145,14 @@ export const experiencesData = [
     description:
       "Developing 'SubSage', a mobile app for language learners: facilitating interactive subtitle translation and word lookup to enhance learning efficiency.",
     icon: React.createElement(FaLanguage),
+    date: "2023 - Present",
+  },
+  {
+    title: "Environmental Insights with Blockchain & Federated Learning",
+    location: "",
+    description:
+      "Involved in a research project that combines a custom private blockchain with federated learning at the edge. This approach aims to efficiently collect and analyze environmental data, providing reliable insights and predictions.",
+    icon: React.createElement(TiWeatherCloudy),
     date: "2023 - Present",
   },
   {
