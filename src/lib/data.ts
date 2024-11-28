@@ -53,6 +53,7 @@ export const projectsData = [
       "Expo",
     ],
     imageUrl: runClubImg,
+    url: "https://github.com/CharlesCoeder/foundrunclub"
   },
   {
     title: "Agenda Master",
@@ -60,6 +61,7 @@ export const projectsData = [
       "An AI-Assisted task management platform for prospective college students.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "ChatGPT API"],
     imageUrl: agendamasterImg,
+    url: "https://github.com/CharlesCoeder/agenda-master"
   },
   {
     title: "SonaSense",
@@ -74,6 +76,7 @@ export const projectsData = [
       "AWS API Gateway/Lambda functions",
     ],
     imageUrl: sonasenseImg,
+    url: "https://github.com/juan-phzy/sona-sense"
   },
   {
     title: "SubSage",
@@ -81,6 +84,7 @@ export const projectsData = [
       "My passion project! A cross-platform app for language learners to seamlessly watch native content. Popup dictionaries allow for streamlined studying of subtitles.",
     tags: ["React Native", "Expo","TypeScript", "WatermelonDB"],
     imageUrl: subsageImg,
+    url: "https://github.com/CharlesCoeder/subtitle-sage"
   },
   {
     title: "BlockFL",
@@ -93,6 +97,7 @@ export const projectsData = [
       "Blockchain",
     ],
     imageUrl: blockflImg,
+    url: "/blockFL.pdf"
   },
 ] as const;
 
