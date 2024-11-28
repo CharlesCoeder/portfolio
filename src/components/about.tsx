@@ -19,29 +19,35 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        Hey there! I'm on the home stretch of my college journey, set to
-        graduate this May with a{" "}
-        <span className="font-bold">BS in Computer Science</span>. My favorite
-        thing about programming? It has to be the{" "}
-        <span className="italic">magic</span> of turning a cool idea into
-        something real and functional. That's why I dove into{" "}
-        <span className="font-bold">full-stack development</span>. I love every
-        bit of the process, whether I'm tinkering with{" "}
-        <span className="font-bold">React</span>, wrangling with{" "}
-        <span className="font-bold">Next.js</span>, styling with
-        <span className="font-bold"> TailwindCSS</span>, or managing data in{" "}
-        <span className="font-bold">MongoDB</span>. I'm also familiar with{" "}
-        <span className="italic">
-          React Native, Supabase, TypeScript, WatermelonDB{" "}
-        </span>
-        and <span className="italic">AWS API Gateway/Lambda functions</span> -
-        always keen to add more tools to my belt.
+        Hey there! I graduated from{" "}
+        <span className="font-bold">New York Institute of Technology</span> with a{" "}
+        <span className="font-bold">BS in Computer Science</span>, achieving a{" "}
+        <span className="font-bold">3.98 GPA</span>. I'm currently pursuing my{" "}
+        <span className="font-bold">Master's in Computer Science</span> at{" "}
+        <span className="font-bold">Georgia Tech</span> through their online OMSCS program.
       </p>
 
       <p className="mb-3">
-        I am currently seeking a{" "}
+        Currently based in <span className="font-bold">New York City</span>, I am seeking a{" "}
         <span className="font-bold">full-time position</span> as a software
-        engineer.
+        engineer and am open to both remote and on-site opportunities nationwide.
+      </p>
+
+      <p className="mb-3">
+        My favorite thing about programming? It has to be the{" "}
+        <span className="italic">magic</span> of turning a cool idea into something 
+        real and functional. That's why I dove into{" "}
+        <span className="font-bold">full-stack development</span>. I love every bit 
+        of the process, whether I'm tinkering with{" "}
+        <span className="font-bold">React</span>, wrangling with{" "}
+        <span className="font-bold">Next.js</span>, styling with
+        <span className="font-bold"> TailwindCSS</span>, or managing data in{" "}
+        <span className="font-bold">MongoDB</span>. I'm also experienced with{" "}
+        <span className="italic">
+          React Native, Supabase, TypeScript, Python{" "}
+        </span>
+        and <span className="italic">AWS Lambda/Gateway</span> -
+        always keen to add more tools to my belt.
       </p>
 
       <p>
