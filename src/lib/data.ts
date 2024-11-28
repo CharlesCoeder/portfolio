@@ -98,7 +98,7 @@ export const projectsData = [
       "Blockchain",
     ],
     imageUrl: blockflImg,
-    url: "/blockFL.pdf"
+    url: "/BlockFL.pdf"
   },
 ] as const;
 
