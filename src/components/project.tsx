@@ -36,31 +36,35 @@ export default function Project({
       <a href={url} target="_blank" rel="noopener noreferrer" className="block">
         <section
           className="group bg-slate-100 max-w-[42rem] border
-          border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem]
-          hover:bg-slate-200 transition cursor-pointer rounded-lg"
+          border-black/5 overflow-hidden relative rounded-lg
+          hover:bg-slate-200 transition cursor-pointer"
         >
-          <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full">
-            <h3 className="text-2xl font-semibold">{title}</h3>
-            <p className="mt-2 leading-relaxed text-slate-700">{description}</p>
-            <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-              {tags.map((tag, index) => (
-                <li
-                  className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
-                  key={index}
-                >
-                  {tag}
-                </li>
-              ))}
-            </ul>
-          </div>
+          <div className="flex flex-col h-full gap-4 p-4 sm:p-8 sm:pl-10">
+            <div className="flex flex-col">
+              <h3 className="text-2xl font-semibold">{title}</h3>
+              <p className="mt-2 leading-relaxed text-slate-700">{description}</p>
+              <ul className="flex flex-wrap mt-4 gap-2">
+                {tags.map((tag, index) => (
+                  <li
+                    className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
+                    key={index}
+                  >
+                    {tag}
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-          <Image
-            src={imageUrl}
-            alt="Project"
-            quality={95}
-            className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-            group-hover:-translate-x-3 group-hover:-translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.04] transition"
-          />
+            <div className="relative w-full">
+              <Image
+                src={imageUrl}
+                alt="Project"
+                quality={95}
+                className="rounded-lg shadow-2xl w-full object-cover
+                group-hover:-translate-y-2 group-hover:-rotate-2 group-hover:scale-[1.04] transition"
+              />
+            </div>
+          </div>
         </section>
       </a>
     </motion.div>
