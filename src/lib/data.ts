@@ -12,6 +12,7 @@ import { TiWeatherCloudy } from "react-icons/ti";
 import { FaPeopleGroup } from "react-icons/fa6";
 import React from "react";
 
+
 export const links = [
   {
     name: "Home",
@@ -177,6 +178,7 @@ export const experiencesData = [
       "Engineered a music streaming website, featuring an advanced search functionality with a unique music analysis backend.",
     icon: React.createElement(FaProjectDiagram),
     date: "December 2023",
+    projectLink: "SonaSense"
   },
   {
     title: "Project: AgendaMaster",
@@ -184,6 +186,7 @@ export const experiencesData = [
       "Developed a task management and college application planning tool bundled with AI-Assisted functionalities.",
     icon: React.createElement(FaProjectDiagram),
     date: "December 2023",
+    projectLink: "Agenda Master"
   },
   {
     title: "SubSage",
@@ -192,6 +195,7 @@ export const experiencesData = [
       "Developing 'SubSage', a mobile app for language learners: facilitating interactive subtitle translation and word lookup to enhance learning efficiency.",
     icon: React.createElement(FaLanguage),
     date: "2023 - Present",
+    projectLink: "SubSage"
   },
   {
     title: "BlockFL",
@@ -200,6 +204,7 @@ export const experiencesData = [
       "Research paper accepted for publication. Developed a system that combines a custom private blockchain with federated learning at the edge for efficient environmental data collection and analysis, providing reliable insights and predictions.",
     icon: React.createElement(TiWeatherCloudy),
     date: "October 2024",
+    projectLink: "BlockFL"
   },
   {
     title: "FOUND Run Club",
@@ -208,5 +213,6 @@ export const experiencesData = [
       "Developed a full-stack run club application deployed on web and mobile with 50 active users. Features include QR code attendance, community chat room, and rewards for run participation.",
     icon: React.createElement(FaProjectDiagram),
     date: "2024 - Present",
+    projectLink: "FOUND Run Club"
   },
 ] as const;

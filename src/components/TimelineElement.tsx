@@ -1,9 +1,9 @@
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { useInView } from "react-intersection-observer";
-import { experiencesData } from "@/lib/data";
+import { scrollToProject } from "@/lib/utils";
+import { ExperienceItem } from "@/lib/types";
 
-type ExperienceItem = (typeof experiencesData)[number];
 type TimelineElementProps = {
   item: ExperienceItem;
 };
@@ -12,6 +12,12 @@ export default function TimelineElement({ item }: TimelineElementProps) {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
+
+  const handleClick = () => {
+    if (item.projectLink) {
+      scrollToProject(item.projectLink);
+    }
+  };
 
   return (
     <div ref={ref} className="vertical-timeline-element">
@@ -34,9 +40,23 @@ export default function TimelineElement({ item }: TimelineElementProps) {
         }}
         visible={inView}
       >
-        <h4 className="font-semibold capitalize">{item.title}</h4>
-        <p className="!mt-0 font-normal">{item.location}</p>
-        <p className="!mt-1 !font-normal text-slate-700">{item.description}</p>
+        <div
+          onClick={handleClick}
+          className={item.projectLink ? "cursor-pointer" : ""}
+        >
+          <h4 className="font-semibold capitalize">{item.title}</h4>
+          {item.location && (
+            <p className="!mt-0 font-normal">{item.location}</p>
+          )}
+          <p className="!mt-1 !font-normal text-slate-700">
+            {item.description}
+          </p>
+          {item.projectLink && (
+            <div className="text-sm italic text-gray-600 mt-2">
+              Click to view project details
+            </div>
+          )}
+        </div>
       </VerticalTimelineElement>
     </div>
   );

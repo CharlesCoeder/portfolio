@@ -20,3 +20,24 @@ export const getErrorMessage = (error: unknown): string => {
 
   return message;
 };
+
+export const scrollToProject = (projectTitle: string) => {
+  // Prevent the default header navigation behavior
+  const projectsSection = document.getElementById("projects");
+  const projectElements = document.querySelectorAll("[data-project-title]");
+  const targetProject = Array.from(projectElements).find(
+    (element) => element.getAttribute("data-project-title") === projectTitle
+  );
+
+  if (targetProject && projectsSection) {
+    // Calculate the final scroll position
+    const projectsOffset = projectsSection.offsetTop;
+    const targetOffset =
+      targetProject.getBoundingClientRect().top + window.scrollY;
+
+    window.scrollTo({
+      top: targetOffset - 100,
+      behavior: "smooth",
+    });
+  }
+};

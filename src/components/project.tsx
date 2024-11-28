@@ -27,6 +27,7 @@ export default function Project({
     <motion.div
       ref={ref}
       className="mb-3 sm:mb-8 last:mb-0"
+      data-project-title={title}
       style={{
         scale: scaleProgress,
         opacity: opacityProgess,
