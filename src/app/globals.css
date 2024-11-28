@@ -8,11 +8,17 @@ html {
 
 .angular-background-slice {
   background-color: #f29913;
-  height: 200px;
+  height: 150px;
   width: 100vw;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%) skewY(-6.5deg);
   transform-origin: top left;
+}
+
+@media (min-width: 640px) {
+  .angular-background-slice {
+    height: 200px;
+  }
 }
