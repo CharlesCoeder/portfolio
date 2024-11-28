@@ -4,6 +4,13 @@
 
 html {
   --line-color: #e5e7eb;
+  scroll-padding-top: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  html {
+    scroll-padding-top: 0;
+  }
 }
 
 .angular-background-slice {
